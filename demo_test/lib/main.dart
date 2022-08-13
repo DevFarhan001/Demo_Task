@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: SharedprefernceHelper.prefs.getBool('loggedin')== true? DashbaordScreen() : LoginScreen(),
+      home: SharedprefernceHelper.prefs.getBool('loggedin')== false? DashbaordScreen() : LoginScreen(),
     );
   }
 }

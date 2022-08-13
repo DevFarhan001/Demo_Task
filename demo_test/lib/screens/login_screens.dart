@@ -62,6 +62,8 @@ class _LoginScreenState extends State<LoginScreen> {
               Text('Enter Your Email' , style: TextStyle(color: Colors.white),),
               TextFormField(
                 style: TextStyle(color: Colors.white),
+                textInputAction: TextInputAction.next,
+                keyboardType: TextInputType.emailAddress,
                 decoration: InputDecoration(
                   hintText: 'info@gmail.com',
                   hintStyle: TextStyle(
@@ -87,6 +89,8 @@ class _LoginScreenState extends State<LoginScreen> {
               TextFormField(
                 style: TextStyle(color: Colors.white),
                 obscureText: true,
+                keyboardType: TextInputType.text,
+                textInputAction: TextInputAction.done,
                 decoration: InputDecoration(
                   hintText: '********',
                   hintStyle: TextStyle(
